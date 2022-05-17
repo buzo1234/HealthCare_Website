@@ -1,12 +1,3 @@
--- phpMyAdmin SQL Dump
--- version 5.0.4
--- https://www.phpmyadmin.net/
---
--- Host: localhost:3306
--- Generation Time: May 17, 2022 at 04:03 PM
--- Server version: 5.7.24
--- PHP Version: 8.0.1
-
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
 SET time_zone = "+00:00";
@@ -17,15 +8,6 @@ SET time_zone = "+00:00";
 /*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
 /*!40101 SET NAMES utf8mb4 */;
 
---
--- Database: `healthcare`
---
-
--- --------------------------------------------------------
-
---
--- Table structure for table `articles`
---
 
 CREATE TABLE `articles` (
   `article_id` int(11) NOT NULL,
@@ -35,9 +17,6 @@ CREATE TABLE `articles` (
   `aricle_url` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
---
--- Dumping data for table `articles`
---
 
 INSERT INTO `articles` (`article_id`, `article_heading`, `article_body`, `article_image`, `aricle_url`) VALUES
 (1, '15 Best Cough Syrups In India', 'Table of Contents BEST COUGH SYRUPS FOR DRY COUGHBENEFITS OF COUGH SYRUPTHINGS TO KEEP IN MIND BEFORE BUYING YOUR DRY COUGH SYRUPHOW TO USE COUGH SYRUPFAQS All of you must have been afflicted with coughs several times. An illness affecting your respiratory system may present with symptoms like cough and sore throat. Cough can be ', 'https://blog-images.pharmeasy.in/2022/05/13221151/6-2.jpg?dim=0x230&dpr=1.25&q=100', 'https://pharmeasy.in/blog/15-best-cough-syrups-in-india/'),
@@ -46,9 +25,6 @@ INSERT INTO `articles` (`article_id`, `article_heading`, `article_body`, `articl
 
 -- --------------------------------------------------------
 
---
--- Table structure for table `medicines`
---
 
 CREATE TABLE `medicines` (
   `medicine_id` int(255) NOT NULL,
@@ -61,9 +37,7 @@ CREATE TABLE `medicines` (
   `medicine_price` int(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
---
--- Dumping data for table `medicines`
---
+
 
 INSERT INTO `medicines` (`medicine_id`, `medicine_name`, `medicine_image`, `type_id`, `company_id`, `prescription`, `medicine_description`, `medicine_price`) VALUES
 (1, 'Gelusil Mps Mint Flavour Sugar Free Bottle Of 400ml Liquid', 'https://cdn01.pharmeasy.in/dam/products_otc/I33946/gelusil-mps-mint-flavour-sugar-free-bottle-of-400ml-liquid-2-1641787977.jpg?dim=320x320&dpr=1&q=100', 3, 1, 0, 'Brand: GELUSIL MPS', 199),
@@ -88,9 +62,6 @@ CREATE TABLE `medicine_companies` (
   `company_image` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
---
--- Dumping data for table `medicine_companies`
---
 
 INSERT INTO `medicine_companies` (`company_id`, `company_name`, `company_image`) VALUES
 (1, 'Cipla', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQi3E57ich7fviRE6Mpjvr4HrbhHk2xvx_wfg&usqp=CAU'),
@@ -100,9 +71,7 @@ INSERT INTO `medicine_companies` (`company_id`, `company_name`, `company_image`)
 
 -- --------------------------------------------------------
 
---
--- Table structure for table `medicine_types`
---
+
 
 CREATE TABLE `medicine_types` (
   `type_id` int(255) NOT NULL,
@@ -110,9 +79,6 @@ CREATE TABLE `medicine_types` (
   `type_image` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
---
--- Dumping data for table `medicine_types`
---
 
 INSERT INTO `medicine_types` (`type_id`, `type_name`, `type_image`) VALUES
 (1, 'Tablet', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQe1XEuqG8O3ioi3Wf756OXJ_NRFFTHU7ATpw&usqp=CAU'),
@@ -121,10 +87,6 @@ INSERT INTO `medicine_types` (`type_id`, `type_name`, `type_image`) VALUES
 (4, 'Ointment', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmCjCXa0PkJ_aXxOiHN4s_UFn-yLVOzfnr9w&usqp=CAU');
 
 -- --------------------------------------------------------
-
---
--- Table structure for table `products`
---
 
 CREATE TABLE `products` (
   `product_id` int(255) NOT NULL,
@@ -135,9 +97,6 @@ CREATE TABLE `products` (
   `product_cat_id` int(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
---
--- Dumping data for table `products`
---
 
 INSERT INTO `products` (`product_id`, `product_name`, `product_price`, `product_img`, `product_desc`, `product_cat_id`) VALUES
 (1, 'Evecare Refreshing Intimate Wash For Women - 90ml', 138, 'https://cdn01.pharmeasy.in/dam/products_otc/G59900/evecare-refreshing-intimate-wash-for-women-90ml-6.2-1646136006.jpg,https://cdn01.pharmeasy.in/dam/products_otc/G59900/evecare-refreshing-intimate-wash-for-women-90ml-6.1-1646135996.jpg,https://cdn01.pharmeasy.in/dam/products_otc/G59900/evecare-refreshing-intimate-wash-for-women-90ml-6.3-1646136004.jpg', '', 1),
@@ -149,9 +108,6 @@ INSERT INTO `products` (`product_id`, `product_name`, `product_price`, `product_
 
 -- --------------------------------------------------------
 
---
--- Table structure for table `product_category`
---
 
 CREATE TABLE `product_category` (
   `cat_id` int(255) NOT NULL,
@@ -159,9 +115,7 @@ CREATE TABLE `product_category` (
   `cat_img` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
---
--- Dumping data for table `product_category`
---
+
 
 INSERT INTO `product_category` (`cat_id`, `cat_name`, `cat_img`) VALUES
 (1, 'Personal Care', 'https://cdn01.pharmeasy.in/dam/discovery/categoryImages/6256cbe92e3d386bb0293463b5928a2f.png'),
@@ -179,9 +133,7 @@ INSERT INTO `product_category` (`cat_id`, `cat_name`, `cat_img`) VALUES
 
 -- --------------------------------------------------------
 
---
--- Table structure for table `users`
---
+
 
 CREATE TABLE `users` (
   `user_id` int(255) NOT NULL,
@@ -189,103 +141,65 @@ CREATE TABLE `users` (
   `user_password` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
---
--- Dumping data for table `users`
---
+
 
 INSERT INTO `users` (`user_id`, `user_email`, `user_password`) VALUES
 (1, 'abc@gmail.com', '$2y$10$T6booCz0Hab/BSbET8/CNuF3C6ISom7j2WHoTREb8pJ6SLQYUymYC'),
 (2, 'abc2@gmail.com', '$2y$10$6ZEGk35r.ZoifezHmKB/gu3M5cCTQHYgWcvJ/ov4Jcw701MzVz8rW');
 
---
--- Indexes for dumped tables
---
 
---
--- Indexes for table `articles`
---
 ALTER TABLE `articles`
   ADD PRIMARY KEY (`article_id`);
 
---
--- Indexes for table `medicines`
---
+
 ALTER TABLE `medicines`
   ADD PRIMARY KEY (`medicine_id`);
 
---
--- Indexes for table `medicine_companies`
---
+
 ALTER TABLE `medicine_companies`
   ADD PRIMARY KEY (`company_id`);
 
---
--- Indexes for table `medicine_types`
---
+
 ALTER TABLE `medicine_types`
   ADD PRIMARY KEY (`type_id`);
 
---
--- Indexes for table `products`
---
+
 ALTER TABLE `products`
   ADD PRIMARY KEY (`product_id`);
 
---
--- Indexes for table `product_category`
---
+
 ALTER TABLE `product_category`
   ADD PRIMARY KEY (`cat_id`);
 
---
--- Indexes for table `users`
---
+
 ALTER TABLE `users`
   ADD PRIMARY KEY (`user_id`);
 
---
--- AUTO_INCREMENT for dumped tables
---
 
---
--- AUTO_INCREMENT for table `articles`
---
 ALTER TABLE `articles`
   MODIFY `article_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
---
--- AUTO_INCREMENT for table `medicines`
---
+
 ALTER TABLE `medicines`
   MODIFY `medicine_id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 
---
--- AUTO_INCREMENT for table `medicine_companies`
---
+
 ALTER TABLE `medicine_companies`
   MODIFY `company_id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
---
--- AUTO_INCREMENT for table `medicine_types`
---
+
 ALTER TABLE `medicine_types`
   MODIFY `type_id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
---
--- AUTO_INCREMENT for table `products`
---
+
 ALTER TABLE `products`
   MODIFY `product_id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
---
--- AUTO_INCREMENT for table `product_category`
---
+
 ALTER TABLE `product_category`
   MODIFY `cat_id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 
---
--- AUTO_INCREMENT for table `users`
---
+
 ALTER TABLE `users`
   MODIFY `user_id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 COMMIT;
