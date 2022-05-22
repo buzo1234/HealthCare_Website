@@ -4,6 +4,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="../css/footer.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
       tailwind.config = {
@@ -21,22 +22,22 @@
   </head>
   <body>
     <!-- Footer -->
-    <section class="flex flex-col w-full mt-3 bg-gray-100 justify-between items-center">
-      <div class="w-full px-4 py-4 grid grid-cols-4  gap-4">
-        <div class="lg:col-span-1 md:col-span-1 col-span-3 flex flex-col">
+    <section class="class21">
+      <div class="class22">
+        <div class="class23">
           <p class="font-bold text-lg mb-2">Company</p>
           <p>About Us</p>
           <p>Project Summary</p>
         </div>
 
-        <div class="lg:col-span-1 md:col-span-1 col-span-3 flex flex-col">
+        <div class="class23">
           <p class="font-bold text-lg mb-2">Our Services</p>
           <p>Order Medicine</p>
           <p>Healthcare Products</p>
           <p>Book an Appointment</p>
         </div>
 
-        <div class="lg:col-span-1 md:col-span-1 col-span-3 flex flex-col">
+        <div class="class23">
           <p class="font-bold text-lg mb-2">Featured Categories</p>
           <?php
             require_once "../config.php";
@@ -51,7 +52,7 @@
           ?>
         </div>
 
-        <div class="lg:col-span-1 md:col-span-1 col-span-3 flex flex-col">
+        <div class="class23">
           <p class="font-bold text-lg mb-2">Our Socials</p>
           <div class="flex space-x-3">
 

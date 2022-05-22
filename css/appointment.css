@@ -1,0 +1,27 @@
+.class61 {
+  display: flex;
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.class62 {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  border-color: #000000;
+  border-width: 0.5px;
+}
+
+.class63 {
+  display: flex;
+  margin-left: 0.75rem;
+  margin-right: 0.75rem;
+  display: flex;
+  flex-direction: column;
+}

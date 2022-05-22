@@ -1,0 +1,83 @@
+.class41 {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin-top: 1.25rem;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  gap: 1rem;
+  max-width: 72rem;
+  margin: auto;
+}
+
+@media (min-width: 1024px) {
+  .class41 {
+    max-width: 72rem;
+    margin: auto;
+    margin-top: 1.25rem;
+  }
+}
+
+.class42 {
+  border-radius: 0.5rem;
+  grid-column: span 1 / span 1;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+    0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+.class43 {
+  position: relative;
+  color: #ffffff;
+  background-color: rgb(14 165 233);
+  font-weight: 700;
+  justify-content: space-between;
+}
+
+.class44 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 135px;
+}
+
+.class45 {
+  display: flex;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  margin-top: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  max-width: 72rem;
+  margin: 2rem auto;
+}
+
+.class46 {
+  display: flex;
+  overflow-x: scroll;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  width: 100%;
+}
+
+.class47 {
+  display: flex;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
+  background-color: #f3f4f6;
+  display: flex;
+  flex-direction: column;
+  border-radius: 0.125rem;
+  cursor: pointer;
+  min-width: 150px;
+  height: 150px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}

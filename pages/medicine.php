@@ -4,6 +4,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="../css/medicine.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
 
@@ -53,7 +54,7 @@
                 if($result = $mysqli->query($sql)){
                     if($result->num_rows > 0){
                     while($row = $result->fetch_assoc()){
-                        echo "<a href='./medbuy.php?company_id={$row['company_id']}&type_id=0'><div class='flex flex-col items-center cursor-pointer mx-2 my-3 px-3 py-2 shadow-xl col-span-1 h-[250px] justify-center'>
+                        echo "<a href='./medbuy.php?company_id={$row['company_id']}&type_id=0'><div class='class51'>
                         <img src='".$row["company_image"]."' alt='category' class='w-40 object-contain'/>
                         <p class='truncate font-semibold text-lg text-center'>".$row["company_name"]."</p>
                         </div></a>";
@@ -74,7 +75,7 @@
                 if($result = $mysqli->query($sql)){
                     if($result->num_rows > 0){
                     while($row = $result->fetch_assoc()){
-                        echo "<a href='./medbuy.php?company_id=0&type_id={$row['type_id']}'><div class='flex flex-col items-center cursor-pointer mx-2 my-3 px-3 py-2 shadow-xl col-span-1 h-[250px] justify-center'>
+                        echo "<a href='./medbuy.php?company_id=0&type_id={$row['type_id']}'><div class='class51'>
                         <img src='".$row["type_image"]."' alt='category' class='w-full h-44 object-contain'/>
                         <p class='truncate font-semibold text-lg text-center'>".$row["type_name"]."</p>
                         </div></a>";

@@ -1,0 +1,191 @@
+.class1 {
+  display: flex;
+  position: sticky;
+  top: 0;
+  z-index: 30;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  background-color: #232f3e;
+  display: flex;
+  color: #ffffff;
+  flex-direction: column;
+  width: 100%;
+}
+
+.class2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background-color: #232f3e;
+}
+
+@media (min-width: 1024px) {
+  .class2 {
+    max-width: 72rem;
+    margin: 0 auto;
+  }
+}
+
+.class3 {
+  display: flex;
+  position: relative;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+  border-radius: 0.5rem;
+  background-color: #f7f7f7;
+}
+
+.class4 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.class5 {
+  display: flex;
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+  color: #000000;
+  display: flex;
+  width: 100%;
+  height: 3rem;
+  border-radius: 0.5rem;
+  outline: 0;
+}
+
+.class6 {
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  cursor: pointer;
+}
+
+.class7 {
+  object-fit: contain;
+  width: 1.25rem;
+}
+
+.class8 {
+  display: none;
+  overflow-y: auto;
+  position: absolute;
+  left: 0;
+  top: 2.75rem;
+  z-index: 30;
+  background-color: #ffffff;
+  color: #000000;
+  flex-direction: column;
+  width: 100%;
+}
+
+.class9 {
+  display: flex;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  background-color: #f3f4f6;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  border-radius: 0.375rem;
+}
+
+.class10 {
+  object-fit: contain;
+  width: 33.333333%;
+  height: 30px;
+}
+
+.class11 {
+  display: flex;
+  flex-direction: column;
+  width: 33.333333%;
+}
+
+.class12 {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.class13 {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  font-weight: 600;
+}
+
+.class14 {
+  display: flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 33.333333%;
+}
+
+.class15 {
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  background-color: #3b82f6;
+  color: #ffffff;
+  font-weight: 600;
+  border-radius: 0.5rem;
+}
+
+.class16 {
+  display: flex;
+  margin-top: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (min-width: 1024px) {
+  .class16 {
+    margin-left: 1rem;
+    flex-direction: row;
+  }
+}
+
+.class17 {
+  display: flex;
+  margin-left: 0.5rem;
+  display: flex;
+}
+
+.class18 {
+  object-fit: contain;
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+  background-color: #ffffff;
+  width: 1.75rem;
+  margin-right: 1rem;
+  margin-left: 0.1rem;
+}
+
+.class19 {
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  background-color: #3b82f6;
+  color: #ffffff;
+  font-weight: 600;
+  border-radius: 0.375rem;
+}

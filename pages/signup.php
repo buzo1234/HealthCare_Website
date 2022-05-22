@@ -77,11 +77,12 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="../css/signup.css">
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class='flex flex-col max-w-4xl mx-auto justify-center h-screen items-center bg-gray-100'>
+<body class='class31'>
     <p class='text-3xl font-semibold mb-10'>Arushi Ka Logo</p>
-    <div class='w-1/2 flex flex-col shadow-xl px-5 py-5 bg-white'>
+    <div class='class32'>
     <p class='text-center text-4xl font-semibold font-sans my-5'>Sign Up</p>
     <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method='post' class='flex flex-col w-full'>
 
